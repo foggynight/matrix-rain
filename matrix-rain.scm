@@ -16,7 +16,6 @@
 (define window (sdl2:create-window! "matrix-rain"
                                     'centered 'centered
                                     screen-width screen-height))
-(define renderer (sdl2:create-renderer! window))
 
 (define bg-color (sdl2:make-color 0 0 0))
 (define fg-color (sdl2:make-color 0 255 0))
