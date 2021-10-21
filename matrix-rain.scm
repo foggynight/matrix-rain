@@ -10,7 +10,7 @@
 (define delay-time (round (/ 1000 target-fps)))
 
 (sdl2:set-main-ready!)
-(sdl2:init! '(video events))
+(sdl2:init! '(events video))
 (ttf:init!)
 
 (define window (sdl2:create-window! "matrix-rain"
