@@ -43,9 +43,8 @@
                                             fg-color bg-color))
   (sdl2:blit-surface! text-surf #f (sdl2:window-surface window) #f))
 
-(define (main)
-  (define done #f)
-  (define event #f)
+(let ((done #f)
+      (event #f))
   (while (not done)
     (sdl2:pump-events!)
     (while (sdl2:has-events?)
@@ -56,5 +55,3 @@
     (draw-text! "Hello, World.")
     (sdl2:update-window-surface! window)
     (sdl2:delay! delay-time)))
-
-(main)
