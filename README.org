@@ -7,7 +7,7 @@ yourself.
 
 * Dependencies
 
-- Chicken Scheme
+- CHICKEN 5
   - miscmacros
   - sdl2
   - sdl2-ttf
